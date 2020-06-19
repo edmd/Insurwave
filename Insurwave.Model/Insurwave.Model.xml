@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Insurwave.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Insurwave.Model.Temperature">
+            <summary>
+            The temperature measurement the Api is expected to display in
+            </summary>
+        </member>
+        <member name="T:Insurwave.Model.Weather">
+            <summary>
+            The returned Weather object
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.City">
+            <summary>
+            The city for the weather data
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Region">
+            <summary>
+            The region of the city for the weather data
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Country">
+            <summary>
+            The country of the city for the weather data
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.LocalTime">
+            <summary>
+            The local time of the city for the weather data
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Temperature">
+            <summary>
+            The temperature of the city
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Sunrise">
+            <summary>
+            The time of the sunrise
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Sunset">
+            <summary>
+            The time of the sunset
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Moonrise">
+            <summary>
+            The time of the moonrise
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Moonset">
+            <summary>
+            The time of the moonset
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.Weather.Error">
+            <summary>
+            Errors and validation returned by the Api
+            </summary>
+        </member>
+        <member name="T:Insurwave.Model.ErrorMessage">
+            <summary>
+            An error for the weather object if any is returned
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.ErrorMessage.code">
+            <summary>
+            The code of the error
+            </summary>
+        </member>
+        <member name="P:Insurwave.Model.ErrorMessage.message">
+            <summary>
+            The description of the error
+            </summary>
+        </member>
+    </members>
+</doc>

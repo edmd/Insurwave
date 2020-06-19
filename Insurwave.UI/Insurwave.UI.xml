@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Insurwave.UI</name>
+    </assembly>
+    <members>
+        <member name="M:Insurwave.UI.Controllers.WeatherController.Get(System.String,System.Nullable{System.Char})">
+            <summary>
+            Find the weather for a specific city
+            </summary>
+            <param name="q">City name</param>
+            <param name="t">Temperature conversion</param>
+            <returns>The weather for a city in a Weather object</returns>
+            <response code="200">Returns the newly created item</response>
+            <response code="400">If the city name is null or empty</response>
+            <response code="404">If the city name is incorrect or cannot be found</response>
+            <response code="500">If there is an application error</response>
+            <response code="503">If the Api times out</response>
+        </member>
+    </members>
+</doc>

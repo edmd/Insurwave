@@ -3,3 +3,10 @@
 ################################################################################
 
 /Insurwave.Domain/bin/Debug/netcoreapp3.1
+/.vs
+/Insurwave.Domain/obj
+/Insurwave.Model/bin/Debug/netcoreapp3.1
+/Insurwave.Model/obj
+/Insurwave.Tests/obj
+/Insurwave.UI/bin/Debug/netcoreapp3.1
+/Insurwave.UI/obj

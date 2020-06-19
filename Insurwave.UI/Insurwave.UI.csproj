@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a9e8d489-5b01-4604-89d3-c4a9a1b2c9de</UserSecretsId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Insurwave.UI.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.3" />
+    <PackageReference Include="Polly" Version="7.2.0" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insurwave.Domain\Insurwave.Domain.csproj" />
+    <ProjectReference Include="..\Insurwave.Model\Insurwave.Model.csproj" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet user-secrets init&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiKey&quot; &quot;6aad23c2c551492fa8f183424200904&quot;&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiDomain&quot; &quot;https://api.weatherapi.com/v1&quot;&#xD;&#xA;REM dotnet user-secrets set &quot;Insurwave:GoogleApiKey&quot; &quot;AIzaSyBwPyFp5zjYcB-l96xxoGhS-uJouhyEv1Q&quot;" />
+  </Target>
+</Project>
