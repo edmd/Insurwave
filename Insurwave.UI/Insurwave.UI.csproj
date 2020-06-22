@@ -19,6 +19,6 @@
     <ProjectReference Include="..\Insurwave.Model\Insurwave.Model.csproj" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="dotnet user-secrets init&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiKey&quot; &quot;6aad23c2c551492fa8f183424200904&quot;&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiDomain&quot; &quot;https://api.weatherapi.com/v1&quot;&#xD;&#xA;REM dotnet user-secrets set &quot;Insurwave:GoogleApiKey&quot; &quot;AIzaSyBwPyFp5zjYcB-l96xxoGhS-uJouhyEv1Q&quot;" />
+    <Exec Command="dotnet user-secrets init&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiKey&quot; &quot;6aad23c2c551492fa8f183424200904&quot;&#xD;&#xA;dotnet user-secrets set &quot;Insurwave:WeatherApiDomain&quot; &quot;https://api.weatherapi.com/v1&quot;&#xD;&#xA;REM dotnet user-secrets set &quot;Insurwave:GoogleApiKey&quot; &quot;xxx&quot;" />
   </Target>
 </Project>
